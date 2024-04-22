@@ -1,0 +1,98 @@
+/* Reset de estilos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+ /* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0; /* Asegura que no haya margen adicional */
+  text-align: center; /* Centra solo el texto del título */
+}
+
+  /* Estilos para el menú lateral */
+  nav {
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left 0.3s ease;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    margin-top: 50px;
+    margin-left: 200px; /* Ajusta según el ancho del menú lateral */
+    padding: 20px;
+  }
+  
+  /* Estilos para la tabla de proveedores */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para la imagen de fondo */
+.imagenes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: -40px;
+}
+
+.imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio del contenedor */
+  opacity: 0.3; /* Define la opacidad de la imagen (valor entre 0 y 1) */
+
+}
+
+.title-container {
+  position: relative;
+}
+
+
+#DevolucionesButton {
+  position: absolute;
+  top: 160px;
+  right: 20px;
+  background-color: rgb(160, 124, 194);
+  padding: 10px;
+}
+

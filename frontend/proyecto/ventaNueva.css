@@ -1,0 +1,215 @@
+/* Reset de estilos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+ /* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0; /* Asegura que no haya margen adicional */
+  text-align: center; /* Centra solo el texto del título */
+}
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la barra desplegable */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><polygon points="0,0 10,0 5,5" style="fill:black"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+    /* Estilos para el menú lateral */
+    nav {
+        width: 200px;
+        height: 100%;
+        background-color: #f4f4f4;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        transition: left 0.3s ease;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      nav ul li {
+        padding: 10px;
+      }
+      
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      /* Estilos para el contenido principal */
+      main {
+        margin-top: 50px;
+        margin-left: 200px; /* Ajusta según el ancho del menú lateral */
+        padding: 20px;
+      }
+      
+      /* Estilos para la tabla de proveedores */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      table th {
+        background-color: #f2f2f2;
+      }
+      
+  /* Estilos para la imagen de fondo */
+  .imagenes {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: -40px;
+  }
+  
+  .imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio del contenedor */
+    opacity: 0.3; /* Define la opacidad de la imagen (valor entre 0 y 1) */
+  
+  }
+    
+    .title-container {
+      position: relative;
+    }
+
+    /* Estilos para el código de compra */
+#codigoventa {
+    position: absolute;
+    left: 225px;
+    width: 400px;
+    top: 300px;
+  }
+
+.Codigo-venta{
+    position: absolute;
+    left: 225px;
+}
+
+.proveedor{
+    position: absolute;
+    left: 800px;
+    top: 240px;
+}  
+
+#proveedor{
+    position: absolute;
+    width: 400px;
+    left: 800px;
+    top: 300px;
+}
+
+.producto{
+    position: absolute;
+    left: 225px;
+    top: 350px;
+}
+
+.label-producto{
+    position: absolute;
+    left: 260px;
+    top: 425px;
+}
+
+#producto{
+    position: absolute;
+    left: 260px;
+    top: 450px;
+    width: 200px;
+}
+
+.label-unidad{
+    position: absolute;
+    left: 500px;
+    top:425px
+}
+
+#unidad{
+    position: absolute;
+    left: 500px;
+    top: 450px;
+    width: 200px;
+}
+
+.label-cantidad{
+    position: absolute;
+    left: 750px;
+    top: 425px;
+}
+
+#cantidad{
+    position: absolute;
+    left: 750px;
+    top: 450px;
+    width: 200px;
+}
+
+#Agregar{
+    position: absolute;
+    left: 1050px;
+    top: 445px;
+    background-color: rgb(160, 124, 194);
+    padding: 10px;
+
+}
+
+.observaciones{
+    position: absolute;
+    left: 225px;
+    top: 600px;
+
+}
+
+.detalle-orden{
+    position: absolute;
+    left: 225px;
+    top: 500px;
+    width: 1200px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proveedores</title>
+  <link rel="stylesheet" href="./productos.css">
+</head>
+<body>
+  <header>
+    <button id="menuButton">Menú</button>
+    <h1>Sistema de Gestión de Inventarios</h1>
+  </header>
+  <nav id="sidebar">
+    <ul>
+      <li><button id="inicioButton">Inicio</button></li>
+      <li><button id="comprasSidebarButton">Compras</button></li>
+      <li><button id="RecibidosSidebarButton">Recibidos</button></li>
+      <li><button id="DevolucionesSidebarButton">Devoluciones</button></li>
+      <li><button id="StocksSidebarButton">Stocks</button></li>
+      <li><button id="VentasSidebarButton">Ventas</button></li>
+      <li><button id="proveedoresSidebarButton">Proveedores</button></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Productos</h2>
+    <button id="nuevoButton">+ Nuevos Productos</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Índice</th>
+          <th>Fecha de Creación</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Proveedor</th>
+          <th>Estado</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí puedes agregar filas de la tabla con información de los proveedores -->
+        <tr>
+          <td>1</td>
+          <td>2024-04-12</td>
+          <td>Producto 1</td>
+          <td>$500</td>
+          <td>Proveedor 1</td>
+          <td>Activo</td>
+          <td><button>Editar</button></td>
+        </tr>
+        <!-- Puedes agregar más filas según sea necesario -->
+      </tbody>
+    </table>
+    <figure class="imagenes">
+      <img src="./imagenes/fondo.jpg" alt="fondo" width="100%", height="100%">
+    </figure>
+  </main>
+<!-- Modal para agregar nuevo producto -->
+<div id="modalAgregarProveedor" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Agregar Productos</h2>
+    <form id="formularioProveedor">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="descripcion">Descripción:</label>
+      <input type="text" id="descripcion" name="descripcion"><br>
+      <label for="precio">Precio:</label>
+      <input type="text" id="precio" name="precio"><br>
+      <label for="proveedor">Proveedor:</label>
+      <input type="text" id="proveedor" name="proveedor"><br>
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado"><br>
+      <input type="submit" value="Guardar">
+      <button type="button" id="cancelarButton">Cancelar</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

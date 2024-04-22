@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Inventarios</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <button id="menuButton">Menú</button>
+    <h1>Sistema de Gestión de Inventarios</h1>
+    <nav>
+      <!-- Solo el botón de proveedores debe tener el identificador -->
+      <button class="headerButton" id="proveedoresButton">Proveedores</button>
+
+    </nav>
+  </header>
+  <nav id="sidebar">
+    <ul>
+      <li><button id="comprasSidebarButton">Compras</button></li>
+      <li><button id="RecibidosSidebarButton">Recibidos</button></li>
+      <li><button id="DevolucionesSidebarButton">Devoluciones</button></li>
+      <li><button id="StocksSidebarButton">Stocks</button></li>
+      <li><button id="VentasSidebarButton">Ventas</button></li>
+      <li><button id="proveedoresSidebarButton">Proveedores</button></li>
+      <li><button id="productosSidebarButton">Productos</button></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+ 
+    <button class="mainButton" id="compraButton">
+      <img src="./imagenes/ordenes de compra.png" alt="Órdenes de Compra">
+      <span>Órdenes de Compra</span>
+    </button>
+
+    <button class="mainButton" id="recibidosButton"><img src="./imagenes/compras recibidas.png" alt="Compras Recibidas">
+    <span>Compras Recibidas</span></button>
+    <button class="mainButton" id="devolucionesButton"><img src="./imagenes/devoluciones.png" alt="Devoluciones">
+    <span>Devoluciones</span></button>
+    <button class="mainButton"id="ventasButton" ><img src="./imagenes/ventas.png" alt="Ventas">
+    <span>Ventas</span></button>
+    <!-- El botón de proveedores debe tener un identificador único -->
+    <button class="mainButton proveedoresButton"><img src="./imagenes/proveedores.png" alt="Proveedores">
+    <span>Proveedores</span></button>
+    <button class="mainButton" id="productosButton">
+      <img src="./imagenes/productos.png" alt="Productos">
+      <span>Productos</span>
+    </button>
+  </button>
+  </section>
+    <figure class="imagenes">
+      <img src="./imagenes/fondo.jpg" alt="fondo" width="100%", height="100%">
+    </figure>
+
+  </main>
+  <footer>
+    <p>Contáctenos</p>
+  </footer>
+
+  
+  <script src="./script.js"></script>
+</body>
+</html>

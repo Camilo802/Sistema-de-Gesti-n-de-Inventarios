@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proveedores</title>
+  <link rel="stylesheet" href="./ordenes_compra.css">
+</head>
+<body>
+  <header>
+    <button id="menuButton">Menú</button>
+    <h1>Sistema de Gestión de Inventarios</h1>
+  </header>
+  <nav id="sidebar">
+    <ul>
+      <li><button id="inicioButton">Inicio</button></li>
+      <li><button id="RecibidosSidebarButton">Recibidos</button></li>
+      <li><button id="DevolucionesSidebarButton">Devoluciones</button></li>
+      <li><button id="StocksSidebarButton">Stocks</button></li>
+      <li><button id="VentasSidebarButton">Ventas</button></li>
+      <li><button id="productosSidebarButton">Productos</button></li>
+      <li><button id="proveedoresSidebarButton">Proveedores</button></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Órdenes de compra</h2>
+    <button id="ordenes_compraButton">+ Nueva Orden</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Índice</th>
+          <th>Fecha de Creación</th>
+          <th>Código</th>
+          <th>Proveedor</th>
+          <th>Producto</th>
+          <th>Estado</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí puedes agregar filas de la tabla con información de los proveedores -->
+        <tr>
+          <td>1</td>
+          <td>2024-04-12</td>
+          <td>PO-003</td>
+          <td>INTEC</td>
+          <td>1</td>
+          <td>Activo</td>
+          <td><button>Editar</button></td>
+        </tr>
+        <!-- Puedes agregar más filas según sea necesario -->
+      </tbody>
+    </table>
+    <figure class="imagenes">
+      <img src="./imagenes/fondo.jpg" alt="fondo" width="100%", height="100%">
+    </figure>
+  </main>
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

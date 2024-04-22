@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Nueva Orden de Compra</title>
+  <link rel="stylesheet" href="./ordenNueva.css">
+</head>
+<body>
+  <header>
+    <button id="menuButton">Menú</button>
+    <h1>Sistema de Gestión de Inventarios</h1>
+  </header>
+  <nav id="sidebar">
+    <ul>
+      <li><button id="inicioButton">Inicio</button></li>
+      <li><button id="comprasSidebarButton">Compras</button></li>
+      <li><button id="RecibidosSidebarButton">Recibidos</button></li>
+      <li><button id="DevolucionesSidebarButton">Devoluciones</button></li>
+      <li><button id="StocksSidebarButton">Stocks</button></li>
+      <li><button id="VentasSidebarButton">Ventas</button></li>
+      <li><button id="proveedoresSidebarButton">Proveedores</button></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Crear Nueva Orden de Compra</h1>
+    <figure class="imagenes">
+      <img src="./imagenes/fondo.jpg" alt="fondo" width="100%", height="100%">
+    </figure>
+  </main>
+  <section>
+    <h2 class="Codigo-Compra">Código de Compra</h2>
+    <input type="text" id="codigoCompra" name="codigoCompra">
+  </section>
+  
+  <section>
+    <h2 class="proveedor">Proveedor</h2>
+    <select id="proveedor">
+      <option value="proveedor1">Proveedor 1</option>
+      <option value="proveedor2">Proveedor 2</option>
+      <!-- Agrega más opciones según tus proveedores disponibles -->
+    </select>
+  </section>
+  
+  <section>
+    <h2 class="producto">Producto</h2>
+    <label for="producto" class="label-producto">Producto:</label>
+    <select id="producto">
+      <option value="producto1">Producto 1</option>
+      <option value="producto2">Producto 2</option>
+      <!-- Agrega más opciones según tus productos disponibles -->
+    </select>
+    <label for="unidad" class="label-unidad">Unidad:</label>
+    <input type="text" id="unidad" name="unidad">
+    <label for="cantidad" class="label-cantidad">Cantidad:</label>
+    <input type="text" id="cantidad" name="cantidad">
+  </section>
+  <button id="Agregar">Agregar</button>
+   <!-- Tabla de detalles de la orden -->
+   <section class="detalle-orden">
+    <h2>Detalles de la Orden</h2>
+    <table id="detallesOrden">
+      <thead>
+        <tr>
+          <th>Cantidad</th>
+          <th>Unidad</th>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas de la tabla -->
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Subtítulo y cuadro de texto para Observaciones -->
+  <section class="observaciones">
+    <h2>Observaciones</h2>
+    <textarea id="observaciones" rows="4" cols="50"></textarea>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
